@@ -27,35 +27,24 @@
             </button>
             <div class="collapse navbar-collapse justify-content-left" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#SOBRE">SOBRE</a>
-                    <a class="nav-link" href="#OBRAS">OBRAS</a>
-                    <a class="nav-link" href="#FOTOS">FOTOS</a>
-                    <a class="nav-link" href="#JUMP">JUMP STUDIOZ</a>
+                    <a class="nav-link" href="jumpstudioz.html">JUMP STUDIOZ</a>
+                    <a class="nav-link" href="#BILE">COSTABILEKIDD</a>
+
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="fundo"></div>
-    <div class="titulo">COSTABILEKIDD</div>
-
-    <div class="spotify">
-        <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/artist/4aF4nfq8Pm1Hf6lR5yXqis?utm_source=generator&theme=0" width="100%"
-            height="152" frameborder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="fundojump"></div>
+    <div class="titulo"><img src="https://dcdn-us.mitiendanube.com/stores/003/165/152/themes/common/logo-883280826-1723044024-d8d70bc5176fb4a472fa739009ca66791723044025.png?0" alt="Logo" width="500" class="d-inline-block align-text-top">
     </div>
 
-    <section id="SOBRE" class="section" style="display:none;">
-        <div class="titulo">SOBRE</div>
-        <div class="conteudo">
-            <img src="images/sobrefoto.jpeg" alt="Sobre Allan Costabile">
-            <p>Allan Costabile, mais conhecido como “costabilekidd”, é um artista audiovisual, estilista do estado de
-                São Paulo. Sua primeira faixa foi “me manti ativo”, disponibilizada oficialmente em 21 de abril de 2023.
-                Ganhou visibilidade pelas rimas e “flows” grudentos em batidas diferentes do que se via em terras
-                tupiniquins.</p>
-        </div>
-    </section>
+    <div class="conteudo">
+        <p>A origem da Jump, vem dos pensamentos de seu criador, Allan Costabile, que cresceu em um ambiente envolvido
+            no mundo da moda e da música, desde cedo, foi exposto a essas indústrias e desenvolveu uma paixão por elas.
+            Com uma estética e uma abordagem ousada, a Jump pretende trazer uma nova ideologia para os jovens de todo o
+            Brasil, de uma forma que o público se sinta abraçado pelo movimento!</p>
+    </div>
 
     <section id="OBRAS" class="section" style="display:none;">
         <div class="titulo">OBRAS</div>
@@ -145,43 +134,26 @@
             </button>
         </div>
     </section>
-    <section id="JUMP" class="section" style="display:none;">
-            <div class="titulo">JUMP STUDIOZ</div>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-                    <div class="col d-flex justify-content-center">
-                        <div class="card h-100">
-                            <img src="https://dcdn-us.mitiendanube.com/stores/003/165/152/themes/common/logo-883280826-1723044024-d8d70bc5176fb4a472fa739009ca66791723044025.png?0" class="card-img-top" alt="me manti ativo*">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">JUMP STUDIOZ</h5>
-                                <p class="card-text">Marca de roupa do artista.
-                                </p>
-                                <a href="jumpstudioz.html"
-                                    target="_blank" class="btn btn-dark">Clique aqui para saber mais</a>
-                            </div>
-                        </div>
-                    </div>
-        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-        <script>
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1);
-                    sections.forEach(sec => {
-                        sec.style.display = (sec.id === targetId) ? 'block' : 'none';
-                    });
-                    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                sections.forEach(sec => {
+                    sec.style.display = (sec.id === targetId) ? 'block' : 'none';
                 });
+                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
