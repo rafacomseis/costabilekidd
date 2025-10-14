@@ -76,21 +76,9 @@ html, body {
   object-fit: cover;
 }
 
-.carousel-item {
-  text-align: center;
-}
-
-.carousel-img {
-  width: 100%;
-  max-width: 600px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: inline-block;
-}
-
 
 @media (max-width: 1200px) {
-  .card-img-top, .carousel-img {
+  .card-img-top {
     max-width: 90%;
   }
 }
@@ -111,7 +99,7 @@ html, body {
     margin-bottom: 50px;
   }
 
-  .card-img-top, .carousel-img {
+  .card-img-top {
     max-width: 100%;
   }
 }
